@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head><title>Get the best Car for you</title>
+<style>
+    h1{
+        border:2px solid white;
+        color: white;
+        text-align:center;
+        margin-top:50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    form{
+        text-align: center;
+        color: white;
+        background-color:red;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+</style>
+</head>
+<body style="background-color:black">
+    <h1>Enter the specifications and company of car you want to buy</h1>
+    <form method="post">
+        <h4>Select the size of the Car you want to buy</h4>
+        <select name="size">
+            <option value="SUBCOMPACT">SUBCOMPACT</option>
+            <option value="MID-SIZE">MID-SIZE</option>
+            <option value="COMPACT">COMPACT</option>
+            <option value="TWO-SEATER">TWO-SEATER</option>
+            <option value="FULL-SIZE">FULL-SIZE</option>
+            <option value="STATION WAGON - SMALL">STATION WAGON - SMALL</option>
+            <option value="SUV - STANDARD">SUV - STANDARD</option>
+        </select>
+        <h4>Which are will you be travailing more</h4>
+        <select name="road">
+            <option  value="city">CITY</option>
+            <option  value="hwy">High Ways</option>
+            <option  value="comb">Both city and High Ways</option>
+        </select><br>
+        <h4> Battery capacity</h4>
+        <select name="battery">
+            <option  value="s">Small</option>
+            <option  value="m">Medium</option>
+            <option  value="l">Large</option>
+        </select><br>
+        <h4>Time</h4>
+        <select name="time">
+            <option  value="s">Less</option>
+            <option  value="m">Medium</option>
+            <option  value="l">More</option>
+        </select><br><br>
+        <input type="submit" value="submit" style="background-color: pink;" name="click">
+    </form>
+    <h3 style="color:white; text-align:center">{{ans}}</h3>
+</body>
+</html>
